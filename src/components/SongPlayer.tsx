@@ -202,7 +202,7 @@ const SongPlayer = () => {
     // 🔴 响应式修改 1: padding 适配手机 (px-5)
     <div
       id="songPlayer"
-      className="min-h-screen py-20 px-5 md:px-20 lg:px-40 bg-azuwhite flex flex-col items-center"
+      className="min-h-screen py-20 px-5 md:px-20 lg:px-40 flex flex-col items-center"
     >
       <Heading text={"Original Song (AI Remixed)"} />
 

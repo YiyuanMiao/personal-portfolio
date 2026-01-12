@@ -32,7 +32,7 @@ export default function Home() {
     });
   }, []);
   return (
-    <div className="bg-azuwhite">
+    <div className="bg-riceyellow">
       <Load />
       <NavBar id={id} />
       <div

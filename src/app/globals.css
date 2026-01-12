@@ -2,3 +2,22 @@
 html {
   scroll-behavior: smooth !important;
 }
+@theme {
+  --color-peach: #e6a6ac;
+  --color-flower: #d48d95;
+  --color-rosie: #e58889;
+  --color-watergreen: #b7d5c6;
+  --color-brightgreen: #a1c2b1;
+  --color-darkgreen: #567357;
+  --color-cream: #f9f0ed;
+}
+
+@theme {
+  --color-riceyellow: #f5e2c3;
+  --color-saltblue: #7da8b1;
+  --color-skyblue: #4a9acb;
+  --color-nightblue: #041a38;
+  --color-cornflowerblue: #97d4f1;
+  --color-charcoal: #394c5c;
+  --color-azuwhite: #d8e7ee;
+}

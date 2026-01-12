@@ -32,7 +32,7 @@ export default function Home() {
     });
   }, []);
   return (
-    <>
+    <div className="bg-azuwhite">
       <Load />
       <NavBar id={id} />
       <div
@@ -47,6 +47,6 @@ export default function Home() {
         <SongPlayer />
         <AIChat />
       </div>
-    </>
+    </div>
   );
 }

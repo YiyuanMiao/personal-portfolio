@@ -32,7 +32,7 @@ const Skills = () => {
             initial="hidden"
             whileInView="visible"
             // 🔴 修正：调整小屏幕下的内边距
-            className="flex items-center justify-center gap-x-3 rounded-xl border border-yellow-500 bg-zinc-200 px-3 py-2 md:px-5"
+            className="flex items-center justify-center gap-x-3 rounded-xl border border-saltblue bg-azuwhite px-3 py-2 md:px-5"
           >
             <Image
               src={item.icon}
@@ -41,7 +41,7 @@ const Skills = () => {
               height={100}
               className="h-auto w-[30px] md:w-[40px]"
             />
-            <p className="text-xs md:text-sm text-gray-600">{item.name}</p>
+            <p className="text-xs md:text-sm text-charcoal">{item.name}</p>
           </motion.div>
         ))}
       </div>

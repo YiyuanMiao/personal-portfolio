@@ -62,29 +62,29 @@ export default function AIChat() {
   return (
     <div id="aiChat" className="my-20 px-4 md:px-20 lg:px-40 select-none">
       <Heading text="Cici AI" />
-      <div className="w-full max-w-md mx-auto bg-white rounded-3xl shadow-xl border border-pink-100 overflow-hidden flex flex-col h-[600px] font-sans">
+      <div className="w-full max-w-md mx-auto bg-azuwhite rounded-3xl shadow-xl border border-saltblue overflow-hidden flex flex-col h-[600px] font-sans">
         <audio ref={audioRef} className="hidden" />
 
         {/* --- 顶部 Header --- */}
-        <div className="bg-white/80 backdrop-blur-md p-6 border-b border-pink-50 z-10">
+        <div className="bg-azuwhite/80 backdrop-blur-md p-6 border-b border-saltblue z-10">
           <div className="flex justify-between items-start">
             <div>
-              <h2 className="text-gray-800 font-bold text-2xl flex items-center gap-2">
+              <h2 className="text-charcoal font-bold text-2xl flex items-center gap-2">
                 Cici AI
-                <span className="text-red-400 text-lg">✨</span>
+                <span className="text-saltblue text-lg">✨</span>
               </h2>
-              <p className="text-xs text-gray-500 mt-1 font-light tracking-wide">
+              <p className="text-xs text-charcoal mt-1 font-light tracking-wide">
                 Talk to the AI version of me! It clones my voice and style.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-1 rounded-full flex border border-gray-100">
+            <div className="bg-azuwhite p-1 rounded-full flex border border-saltblue">
               <button
                 onClick={() => setLanguage("zh")}
                 className={`px-3 py-1 text-xs font-medium rounded-full transition-all duration-300 ${
                   language === "zh"
-                    ? "bg-red-500 text-white shadow-md shadow-rose-200"
-                    : "text-gray-400 hover:text-red-400"
+                    ? "bg-saltblue text-white shadow-md shadow-azuwhite"
+                    : "text-charcoal hover:text-saltblue"
                 }`}
               >
                 中
@@ -93,8 +93,8 @@ export default function AIChat() {
                 onClick={() => setLanguage("en")}
                 className={`px-3 py-1 text-xs font-medium rounded-full transition-all duration-300 ${
                   language === "en"
-                    ? "bg-red-500 text-white shadow-md shadow-rose-200"
-                    : "text-gray-400 hover:text-red-400"
+                    ? "bg-saltblue text-white shadow-md shadow-azuwhite"
+                    : "text-charcoal hover:text-saltblue"
                 }`}
               >
                 En
@@ -106,11 +106,11 @@ export default function AIChat() {
         {/* --- 聊天内容区 --- */}
         <div
           ref={chatContainerRef}
-          className="flex-1 overflow-y-auto p-5 space-y-6 bg-white"
+          className="flex-1 overflow-y-auto p-5 space-y-6 bg-azuwhite"
         >
           {conversation.length === 0 && (
-            <div className="h-full flex flex-col items-center justify-center text-gray-300 space-y-4 opacity-60">
-              <div className="w-20 h-20 bg-rose-50 rounded-full flex items-center justify-center text-3xl">
+            <div className="h-full flex flex-col items-center justify-center text-charcoal space-y-4 opacity-60">
+              <div className="w-20 h-20 bg-azuwhite rounded-full flex items-center justify-center text-3xl">
                 😜
               </div>
               <p className="text-sm font-light">
@@ -133,10 +133,10 @@ export default function AIChat() {
                 <div
                   className={`max-w-[85%] px-5 py-3 text-sm leading-relaxed shadow-sm ${
                     msg.role === "user"
-                      ? "bg-rose-500 text-white rounded-2xl rounded-br-none"
+                      ? "bg-saltblue text-white rounded-2xl rounded-br-none"
                       : msg.role === "system"
-                      ? "bg-gray-100 text-gray-500 rounded-lg text-xs"
-                      : "bg-rose-50 text-gray-700 rounded-2xl rounded-bl-none border border-rose-100"
+                      ? "bg-azuwhite text-charcoal rounded-lg text-xs"
+                      : "bg-azuwhite text-charcoal rounded-2xl rounded-bl-none border border-saltblue"
                   }`}
                 >
                   {msg.content}
@@ -152,15 +152,15 @@ export default function AIChat() {
               className="flex items-center space-x-1.5 ml-2 mt-2"
             >
               <div
-                className="w-2 h-2 bg-rose-300 rounded-full animate-bounce"
+                className="w-2 h-2 bg-azuwhite rounded-full animate-bounce"
                 style={{ animationDelay: "0s" }}
               />
               <div
-                className="w-2 h-2 bg-rose-400 rounded-full animate-bounce"
+                className="w-2 h-2 bg-saltblue rounded-full animate-bounce"
                 style={{ animationDelay: "0.15s" }}
               />
               <div
-                className="w-2 h-2 bg-rose-500 rounded-full animate-bounce"
+                className="w-2 h-2 bg-charcoal rounded-full animate-bounce"
                 style={{ animationDelay: "0.3s" }}
               />
             </motion.div>
@@ -168,7 +168,7 @@ export default function AIChat() {
         </div>
 
         {/* --- 底部输入区 --- */}
-        <div className="p-5 bg-white border-t border-pink-50">
+        <div className="p-5 bg-azuwhite border-t border-saltblue">
           <div className="flex gap-3 relative items-center">
             <input
               type="text"
@@ -179,15 +179,15 @@ export default function AIChat() {
                 language === "zh" ? "说点什么..." : "Say something..."
               }
               disabled={loading}
-              className="w-full bg-gray-50 text-gray-700 border border-gray-100 rounded-full px-6 py-3 text-sm focus:outline-none focus:border-rose-300 focus:ring-2 focus:ring-rose-100 transition-all placeholder-gray-400"
+              className="w-full bg-white text-charcoal border border-saltblue rounded-full px-6 py-3 text-sm focus:outline-none focus:border-saltblue focus:ring-2 focus:ring-azuwhite transition-all placeholder-charcoal"
             />
             <button
               onClick={handleSend}
               disabled={loading || !input.trim()}
               className={`p-3 rounded-full transition-all transform active:scale-95 flex-shrink-0 ${
                 loading || !input.trim()
-                  ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                  : "bg-rose-500 hover:bg-rose-600 text-white shadow-lg shadow-rose-200"
+                  ? "bg-azuwhite text-charcoal cursor-not-allowed"
+                  : "bg-saltblue hover:bg-charcoal text-white shadow-lg shadow-azuwhite"
               }`}
             >
               <svg

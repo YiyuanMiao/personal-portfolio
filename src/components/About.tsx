@@ -26,22 +26,21 @@ const About = () => {
         />
 
         {/* 文字框区域 */}
-        <div className="relative max-w-[800px] rounded-xl bg-zinc-100 p-5 text-justify shadow-md">
+        <div className="relative max-w-[800px] rounded-xl bg-azuwhite p-5 text-justify shadow-md">
           {/* 这个箭头只在电脑上显示比较合理，或者根据设计图调整 */}
-          <span className="absolute -left-5 top-20 scale-[2.5] text-zinc-100 hidden md:block">
+          <span className="absolute -left-5 top-20 scale-[2.5] text-charcoal hidden md:block">
             {arrowLeftIcon}
           </span>
-
           {/* 修正点：tetx 改为 text */}
-          <p className="text-lg font-light text-gray-700 first-letter:pl-3 lg:text-[16px] sm:text-[14px]">
+          <div className="text-lg font-light text-charcoal lg:text-[16px] sm:text-[14px]">
             {aboutText}
-          </p>
-
+          </div>
+          {/* TODO: 这里还需要添加一个CV*/}
           <a
-            href="/nick-cv.pdf"
+            href="#"
             download=""
-            className="w-max flex items-center gap-x-2 mt-6 rounded-full border border-gray-300
-             bg-red-400 px-3 py-2 font-light text-white hover:bg-red-500 transition"
+            className="w-max flex items-center gap-x-2 mt-6 rounded-full border border-saltblue
+             bg-saltblue px-3 py-2 font-light text-white hover:bg-charcoal transition"
           >
             <span>Download CV</span>
             <span className="text-xl">{downloadIcon}</span>

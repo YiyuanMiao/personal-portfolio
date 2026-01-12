@@ -4,42 +4,57 @@ import FacebookCircleLineIcon from "remixicon-react/FacebookCircleLineIcon";
 import DribbbleLineIcon from "remixicon-react/DribbbleLineIcon";
 import YoutubeLineIcon from "remixicon-react/YoutubeLineIcon";
 import GithubLineIcon from "remixicon-react/GithubLineIcon";
+import LinkedinLineIcon from "remixicon-react/LinkedinLineIcon";
+import BilibiliLineIcon from "remixicon-react/BilibiliLineIcon";
+import NeteaseCloudMusicLineIcon from "remixicon-react/NeteaseCloudMusicLineIcon";
 
 /* eslint-disable react/jsx-key */
 export const heroIcons = [
-  <InstagramLineIcon />,
-  <FacebookCircleLineIcon />,
-  <DribbbleLineIcon />,
-  <YoutubeLineIcon />,
-  <GithubLineIcon />,
+  {
+    icon: <InstagramLineIcon />,
+    url: "https://www.instagram.com/cicimiao1?igsh=MWpwaTAzdHNrdG10Mw%3D%3D&utm_source=qr",
+  },
+  { icon: <NeteaseCloudMusicLineIcon />, url: "https://163cn.tv/ZxO2BG5" },
+  {
+    icon: <LinkedinLineIcon />,
+    url: " http://linkedin.com/in/cici-miao-0b7b8132a",
+  },
+  { icon: <BilibiliLineIcon />, url: "https://b23.tv/s3QOQm4" },
+  { icon: <GithubLineIcon />, url: "https://github.com/YiyuanMiao" },
 ];
 
 // About Me
-import GithubFillIcon from "remixicon-react/GithubFillIcon";
-import Projector2LineIcon from "remixicon-react/Projector2LineIcon";
-import GroupLineIcon from "remixicon-react/GroupLineIcon";
-import AwardFillIcon from "remixicon-react/AwardFillIcon";
+
+import AwardLineIcon from "remixicon-react/AwardLineIcon";
+
+import CodeBoxLineIcon from "remixicon-react/CodeBoxLineIcon";
+import StackLineIcon from "remixicon-react/StackLineIcon";
+import BookLineIcon from "remixicon-react/BookLineIcon";
 
 export const aboutData = [
   {
-    title: "Github Repos",
-    amount: 348,
-    icon: <GithubFillIcon />,
+    title: "Undergrad GPA",
+    amount: 3.97,
+    // GPA -> Graduation Cap
+    icon: <AwardLineIcon />,
   },
   {
-    title: "Successful Projects",
-    amount: 227,
-    icon: <Projector2LineIcon />,
+    title: "LeetCode Solved",
+    amount: "150+",
+    // LeetCode -> Code Box
+    icon: <CodeBoxLineIcon />,
   },
   {
-    title: "Satisfied clients",
-    amount: 176,
-    icon: <GroupLineIcon />,
+    title: "Tech Stack",
+    amount: "10+",
+    // Tech Stack -> Stack
+    icon: <StackLineIcon />,
   },
   {
-    title: "Awards and Recognition",
-    amount: 107,
-    icon: <AwardFillIcon />,
+    title: "Course Projects",
+    amount: "5+",
+    // Projects -> Book
+    icon: <BookLineIcon />,
   },
 ];
 
@@ -49,60 +64,93 @@ import ArrowLeftSFillIcon from "remixicon-react/ArrowLeftSFillIcon";
 export const downloadIcon = <DownloadLineIcon />;
 export const arrowLeftIcon = <ArrowLeftSFillIcon />;
 
-export const aboutText =
-  " Hi, I'm Nick, a web developer & designer. I blend the technical  skills of web development with the creative aspects of web design. I code in HTML, CSS, JavaScript, React, NextJS... to build functional and responsive websites, while also using design tools like Photoshop and Figma to create visually appealing and user-friendly  interfaces. My role allows me to ensure that websites not only work well but also look great and provide an excellent user experience.";
+export const aboutText = (
+  <div>
+    <p>
+      Hello! I’m <span className="font-bold">Cici (Yiyuan) Miao</span>.
+    </p>
+
+    <p>
+      I am currently a Master’s student in Computer and Information Technology
+      (MCIT) at the{" "}
+      <span className="font-bold">University of Pennsylvania</span>.
+    </p>
+
+    <p>
+      My path to engineering was unconventional. Originally an English major and
+      Econ & Finance minor at{" "}
+      <span className="font-bold">Tsinghua University</span> (with an exchange
+      at <span className="font-bold">Cornell</span>), I discovered my passion
+      for technology when I wrote C codes to help classmates memorize
+      vocabulary, as well as applying algorithms in Cornell Mathematical
+      Modeling Contest. This interest solidified during my time as a Data
+      Analytics intern at <span className="font-bold">DiDi</span>, where I
+      realized I preferred the creativity of building software over the
+      repetition of traditional auditing & IBD work.
+    </p>
+
+    <p>
+      Beyond the screen, I am a creative at heart—an award-winning
+      singer-songwriter in Tsinghua Singing Contest and former choir section
+      leader.
+    </p>
+
+    <p>
+      I am now fully transitioning into a career as a{" "}
+      <span className="font-bold">Software Development Engineer (SDE)</span>. I
+      aim to leverage my diverse background to build impactful solutions.
+      Meanwhile, I have a particular interest in AI for translation and music
+      generation, which may become the future path I pursue.
+    </p>
+  </div>
+);
+
+//" Hi, I'm Nick, a web developer & designer. I blend the technical  skills of web development with the creative aspects of web design. I code in HTML, CSS, JavaScript, React, NextJS... to build functional and responsive websites, while also using design tools like Photoshop and Figma to create visually appealing and user-friendly  interfaces. My role allows me to ensure that websites not only work well but also look great and provide an excellent user experience.";
 // End of About Me
 
 // Experience
 export const experienceData = [
   {
-    year: 1,
-    title: "Foundation and Basics",
-    education:
-      "High School Diploma: Focus on computer science, mathematics, and art/design courses.",
+    year: 2021,
+    title: "High School Graduation & Univeristy Entrance",
+    education: [
+      "High School Diploma: Shanghai Foreign Language School Affiliated to SISU, China",
+      "University Admission: Tsinghua University",
+    ],
     experience: [
-      "Basic HTML/CSS: Learn through online tutorials and courses.",
-      "Personal Projects: Create simple personal websites or blogs.",
+      "Admitted to Tsinghua University via guaranteed admission, ranking 1st in the grade and 8th nationwide in the qualifying exam.",
+      "Third Prize in Technology Innovation Contest: Utilized the Arduino platform for microcontroller development, designing a sitting posture adjustment warning device aimed at the prevention of scoliosis.",
+      "Composed graduation song, gaining 8000+ plays on NetEase Music.",
     ],
   },
   {
-    year: 2,
-    title: "Advanced Learning and Early Experience",
+    year: 2023,
+    title: "Exchange Program",
     education:
-      "Associate’s Degree in Web Development or Design: Enroll in a 2-year program covering web development and design principles.",
+      "Cornell Univeristy Exchange Program: Enroll in a one-semester exchange program at Cornell.",
     experience: [
-      "Freelance Work: Take on small freelance projects to build a portfolio.",
+      "Courses accomplished: Applied Econometrics, Intermediate Microeconomic Theory, Mathematical Modeling, Introduction to Ordinary Differential Equations, Short Course in Python",
       "Online Courses and Certifications: Learn JavaScript, responsive design, and UX/UI design.",
     ],
   },
   {
-    year: 3,
-    title: "Specialized Education and Real-World Application",
-    education:
-      "Online Courses and Bootcamps: Focus on specialized areas like front-end frameworks (React, Angular) and back-end technologies (Node.js).",
+    year: 2024,
+    title: "Intern & Knowledge Expansion",
+    education: "Tsinghua Univeristy",
     experience: [
-      "Internships: Secure internships with tech companies or design agencies.",
-      "Contribute to Open Source: Collaborate on open-source projects.",
+      "Data Analysis Internship at Didi: Utilized knowledge of statistics and coding to provide business analysts with information through examining observational study models; Conducted group seminars on Observational Studies",
+      "Online Coursework: UCLA: Machine Learning; UCB: Introduction to SQL, Multivariable Calculus",
     ],
   },
   {
-    year: 4,
-    title: "Building Expertise and Expanding Skills",
-    education:
-      "Certifications: Obtain certifications in advanced web technologies.",
-    experience: [
-      "Full-Time Position: Work as a junior web developer or designer.",
-      "Portfolio Development: Continuously update your portfolio with professional and personal projects.",
+    year: 2025,
+    title: "Entering UPenn MCIT",
+    education: [
+      "Graduation from Tsinghua University",
+      "Admitted into UPenn MCIT",
     ],
-  },
-  {
-    year: 5,
-    title: "Mastery and Leadership",
-    education:
-      "Workshops and Conferences: Attend industry events to stay updated.",
     experience: [
-      "Senior Position: Aim for a senior web developer or lead designer role, mentoring junior colleagues.",
-      "Freelance and Consulting: Consider starting a freelance business or consulting practice.",
+      "Finished Java, Computing Systems, and Discrete Maths courses with a total GPA of 3.9.",
     ],
   },
 ];
@@ -110,16 +158,12 @@ export const experienceData = [
 // Skills
 export const skillsData = [
   {
-    name: "Figma",
-    icon: "/skills/figma.png",
+    name: "Java",
+    icon: "/skills/java.png",
   },
   {
-    name: "Photoshop",
-    icon: "/skills/photoshop.png",
-  },
-  {
-    name: "Blender",
-    icon: "/skills/blender.png",
+    name: "SpringBoot",
+    icon: "/skills/springBoot.png",
   },
   {
     name: "VS Code",
@@ -142,16 +186,8 @@ export const skillsData = [
     icon: "/skills/tailwind.png",
   },
   {
-    name: "Vite",
-    icon: "/skills/vite.png",
-  },
-  {
     name: "ReactJS",
     icon: "/skills/react.png",
-  },
-  {
-    name: "TypeScript",
-    icon: "/skills/ts.png",
   },
   {
     name: "AI",
@@ -162,24 +198,20 @@ export const skillsData = [
     icon: "/skills/framer.png",
   },
   {
-    name: "ThreeJS",
-    icon: "/skills/threejs.png",
-  },
-  {
     name: "NextJS",
     icon: "/skills/nextjs.png",
   },
   {
-    name: "NodeJS",
-    icon: "/skills/nodejs.png",
-  },
-  {
-    name: "MongoDB",
-    icon: "/skills/mongodb.png",
-  },
-  {
     name: "Github",
     icon: "/skills/github.png",
+  },
+  {
+    name: "Python",
+    icon: "/skills/python.png",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "/skills/postgreSQL.png",
   },
 ];
 
@@ -187,10 +219,6 @@ export const skillsData = [
 export const photoData = [
   {
     photo: "/photoAlbum/thu_gate.jpg",
-    text: "Grad Pics at Tsinghua University",
-  },
-  {
-    photo: "/photoAlbum/thu_pond.jpg",
     text: "Grad Pics at Tsinghua University",
   },
   {
@@ -210,8 +238,8 @@ export const photoData = [
     text: "Vintage Chinese Style Portrait",
   },
   {
-    photo: "/photoAlbum/Harvard_visit.jpeg",
-    text: "A Visit to Harvard Univeristy",
+    photo: "/photoAlbum/song_contest.PNG",
+    text: "THU Original Song Contest",
   },
 ];
 // Reviews

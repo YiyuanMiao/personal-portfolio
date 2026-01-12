@@ -59,13 +59,13 @@ const Hero = () => {
             <Image
               src={"/selfie.png"}
               alt="Person Image"
-              width={300}
-              height={300}
+              width={350}
+              height={350}
               priority={true} //优先load
-              className="h-auto w-\[130px\]"
+              className="h-auto w-[200px]"
             />
             <motion.span
-              className="absolute text-3xl font-semibold text-white"
+              className="absolute text-3xl font-semibold text-azuwhite"
               initial={{ scale: 0 }}
               animate={{
                 opacity: buttonHover ? 0 : 1,
@@ -77,28 +77,28 @@ const Hero = () => {
               Hi
             </motion.span>
           </motion.div>
-          <h1 className="text-center text-3xl font-gold tracking-wider text-gray sm:text-2xl">
-            My name is Cici Miao &
+          <h1 className="text-center text-3xl font-gold tracking-wider text-charcoal sm:text-2xl">
+            My name is <span className="font-bold">Cici Miao</span> &
           </h1>
-          <p className="text-lg tracking-wider text-gray-700">
-            I like singing & songwriting ~
+          <p className="text-lg tracking-wider text-charcoal">
+            I like coding & singing & songwriting ~
           </p>
         </div>
-        <div className="mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl">
-          {heroIcons.map((icon, i) => (
+        <div className="mt-8 flex justify-center gap-x-10 text-3xl text-saltblue sm:text-2xl">
+          {heroIcons.map((item, i) => (
             <a
-              href="#"
+              href={item.url}
               key={i}
-              className="rounded-lg hover:bg-red-400 hover:text-white transition-colors"
+              className="rounded-lg hover:bg-saltblue hover:text-white transition-colors"
             >
-              {icon}
+              {item.icon}
             </a>
           ))}
         </div>
         <a
           href="/#aiChat"
-          className="mx-auto mt-7 block w-max rounded-lg bg-red-400 px-3 py-1 
-          fon-light capitalize tracking-wider text-white hover:bg-red-500 transition-colors"
+          className="mx-auto mt-7 block w-max rounded-lg bg-saltblue px-3 py-1 
+          fon-light capitalize tracking-wider text-white hover:bg-charcoal transition-colors"
           onMouseEnter={() => setButtonHover(true)}
           onMouseLeave={() => setButtonHover(false)}
         >

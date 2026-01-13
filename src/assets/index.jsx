@@ -130,7 +130,6 @@ export const experienceData = [
       "Cornell Univeristy Exchange Program: Enroll in a one-semester exchange program at Cornell.",
     experience: [
       "Courses accomplished: Applied Econometrics, Intermediate Microeconomic Theory, Mathematical Modeling, Introduction to Ordinary Differential Equations, Short Course in Python",
-      "Online Courses and Certifications: Learn JavaScript, responsive design, and UX/UI design.",
     ],
   },
   {
